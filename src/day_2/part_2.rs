@@ -18,7 +18,7 @@ pub fn run() -> io::Result<()> {
         }
     }
 
-    println!("Total safe: {}", total_safe);
+    println!("Day 2 Part 2: {}", total_safe);
 
     Ok(())
 }

@@ -14,7 +14,7 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         total += num1*num2;
     }
 
-    println!("Total: {}", total);
+    println!("Day 3 Part 1: {}", total);
 
     Ok(())
 }

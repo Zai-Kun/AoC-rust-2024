@@ -24,7 +24,7 @@ pub fn run() -> io::Result<()> {
         .map(|(&num1, &num2)| (num1 - num2).abs())
         .sum();
 
-    println!("Total: {}", total);
+    println!("Day 1 Part 1: {}", total);
 
     Ok(())
 }

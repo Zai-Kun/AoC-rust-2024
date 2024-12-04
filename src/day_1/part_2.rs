@@ -23,7 +23,7 @@ pub fn run() -> io::Result<()> {
         total += num*count as i32;
     }
 
-    println!("Total {}", total);
+    println!("Day 1 Part 2: {}", total);
 
     Ok(())
 }

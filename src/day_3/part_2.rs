@@ -26,6 +26,6 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
 
-    println!("Total: {}", total);
+    println!("Day 3 Part 2: {}", total);
     Ok(())
 }
