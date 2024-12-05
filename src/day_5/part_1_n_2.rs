@@ -72,21 +72,18 @@ pub fn run() -> io::Result<()> {
 
     let sort = SortByRules::new(rules);
 
-    let mut total = 0;
+    let mut part_1_total = 0;
+    let mut part_2_total = 0;
+
     for l in &mut lists{
         if sort.is_sorted(l){
-            total += l[l.len()/2];
-        }
-    }
-    println!("Day 5 Part 1: {total}");
-    
-    let mut total = 0;
-    for l in &mut lists{
-        if !sort.is_sorted(l){
+            part_1_total += l[l.len()/2];
+        } else {
             sort.sort(l);
-            total += l[l.len()/2];
+            part_2_total += l[l.len()/2];
         }
     }
-    println!("Day 5 Part 2: {total}");
+
+    println!("Day 5 Part 1: {}\nDay 5 Part 2: {}", part_1_total, part_2_total);
     Ok(())
 }
