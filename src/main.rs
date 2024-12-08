@@ -5,9 +5,13 @@ mod day_4;
 mod day_5;
 mod day_6;
 mod day_7;
+mod day_8;
 
+use std::time::Instant;
 
 fn main() {
+    let start = Instant::now();
+
     day_1::part_1::run().unwrap();
     day_1::part_2::run().unwrap();
 
@@ -26,4 +30,9 @@ fn main() {
 
     day_7::part_1::run().unwrap();
     day_7::part_2::run().unwrap();
+
+    day_8::part_1::run().unwrap();
+    day_8::part_2::run().unwrap();
+
+    println!("Time elapsed: {}", start.elapsed().as_secs_f64());
 }
