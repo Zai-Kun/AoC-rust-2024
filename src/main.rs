@@ -6,6 +6,7 @@ mod day_5;
 mod day_6;
 mod day_7;
 mod day_8;
+mod day_9;
 
 use std::time::Instant;
 
@@ -59,6 +60,10 @@ fn main() {
     }
     if let Err(e) = day_8::part_2::run() {
         eprintln!("Error in day_8::part_2: {}", e);
+    }
+    
+    if let Err(e) = day_9::part_1::run() {
+        eprintln!("Error in day_8::part_1: {}", e);
     }
 
     println!("Time elapsed: {}", start.elapsed().as_secs_f64());
